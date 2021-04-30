@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="underline"></div>
             <h1>Bindha Basini Construction</h1>
             <h4>Best Construction Company in Nepal, (South) Lalitpur, <br/> Godawari-Chapagaun</h4>
-            <Link to="/contact" className="btn">
+            <Link to="/inquiry" className="btn">
               contact us
             </Link>
             <SocialLinks />

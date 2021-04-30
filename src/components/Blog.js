@@ -8,7 +8,7 @@ const Blog = ({ id, title, date, category, image, slug, description }) => {
     <Link to={`/blogs/${slug}`} className="blog" key={id}>
       <article>
         {img && (
-          <GatsbyImage image={img} alt={title} fluid={image.fluid} className="blog-img" />
+          <GatsbyImage image={img} alt={title} className="blog-img" />
         )}
         <div className="blog-card">
           <h4>{title}</h4>

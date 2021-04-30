@@ -24,7 +24,7 @@ const data = [
   {
     id: 5,
     text: "inquiry",
-    url: "/contact/",
+    url: "/inquiry/",
   },
 ]
 
