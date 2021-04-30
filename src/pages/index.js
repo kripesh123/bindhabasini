@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
 import Jobs from "../components/Jobs"
 import Services from "../components/Services"
 import Hero from "../components/Hero"
@@ -9,7 +9,7 @@ import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import Newsletters from "../components/Newsletters"
 
-export default ({ data }) => {
+const App = ({ data }) => {
   const {
     allContentfulJob: { nodes: jobs },
     allContentfulProject: { nodes: projects },
@@ -18,7 +18,7 @@ export default ({ data }) => {
 
   return (
    <Layout>
-     <SEO title="Bindha Basini Construction" description="Top Construction Company in South Lalitpur Nepal. Bindha Basini Construction, Best Construction Firm in Nepal South-Lalitpur Godawari Chapagaun. " />
+     <Seo title="Bindha Basini Construction" description="Top Construction Company in South Lalitpur Nepal. Bindha Basini Construction, Best Construction Firm in Nepal South-Lalitpur Godawari Chapagaun. " />
      <Hero />
      <Services />
      <Jobs jobs={jobs} title="products" showLink/>
@@ -56,6 +56,13 @@ export const query = graphql`
           id
           title
         }
+        image {
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+            layout: CONSTRAINED
+          )
+        }
       }
     }
     allContentfulBlog(sort: { fields: date, order: DESC }, limit: 3) {
@@ -66,8 +73,15 @@ export const query = graphql`
         id
         title
         category
+        image {
+          gatsbyImageData(
+            placeholder: BLURRED
+            formats: [AUTO, WEBP]
+            layout: CONSTRAINED
+          )
+        }
       }
     }
   }
 `
-
+export default App

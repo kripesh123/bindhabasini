@@ -1,7 +1,7 @@
 import React from "react"
 import { FaRoad, FaBuilding } from "react-icons/fa"
 import { GiBlackBridge } from "react-icons/gi"
-export default [{
+const Services = [{
         id: 1,
         icon: < FaRoad className = "service-icon" / > ,
         title: "Road & Bridge Construction",
@@ -21,3 +21,4 @@ export default [{
     },
     
 ]
+export default Services

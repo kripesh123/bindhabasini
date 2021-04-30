@@ -15,8 +15,9 @@ module.exports = {
     siteUrl: "https://bindhabasiniconstruction.com",
 },
   plugins: [
-    `gatsby-transformer-sharp`,
+        `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sitemap`,
         {

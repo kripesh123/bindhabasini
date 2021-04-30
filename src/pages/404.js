@@ -1,12 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
 import { Link } from "gatsby"
-import SEO from "../components/SEO"
+import Seo from "../components/SEO"
 
 const Error = () => {
   return (
     <Layout>
-      <SEO title="You're Lost" />
+      <Seo title="You're Lost" />
       <main className="error-page">
         <div className="error-container">
           <h1>oops ! <br/> are you lost ?</h1>
