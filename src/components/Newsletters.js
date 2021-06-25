@@ -15,7 +15,7 @@ export default class Newsletters extends React.Component {
         return (
             <section className="newsletters-page bg-grey">
                 <Title title="Newsletters" />
-                {/* <div className="newsletters-page"> */}
+                <div className="newsletters-page">
                     <article className="newsletters-form">
                         <form action="https://formspree.io/mdowqoov" method="POST" onSubmit={this.submitForm}>
                             <div className="form-group">
@@ -30,7 +30,7 @@ export default class Newsletters extends React.Component {
                             </div>
                         </form>
                     </article>
-                {/* </div> */}
+                </div>
             </section>
         )
     }
